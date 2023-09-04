@@ -1,0 +1,234 @@
+/* Header Start */
+
+header {
+    border-bottom: 1px solid #dee0ea;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    z-index: 10;
+}
+
+.global-notification {
+    background-color: #1367ef;
+    padding: 14px 0;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.global-notification a {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.header-row {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-mobile {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.header-center .navigation .menu-list {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+
+}
+
+.header-center .menu-list .menu-list-item {
+    display: flex;
+    position: relative;
+    height: 90px;
+    align-items: center;
+}
+
+.header-center .menu-list .menu-link {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.header-center .menu-list .menu-link.active::after {
+    width: 100%;
+}
+
+
+.header-center .menu-list .menu-link::after {
+    content: "";
+    height: 1px;
+    width: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #1367ef;
+    transition: .2s ease width;
+}
+
+.header-center .menu-list .menu-list-item:hover .menu-link::after {
+    width: 100%;
+
+}
+
+.header-center .menu-list .menu-link.active::after {
+    width: 100%;
+}
+
+.header-center .menu-list i {
+    font-size: 12px;
+}
+
+.header-center .bi-x-circle {
+    display: none;
+}
+
+.header-right .header-right-links {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+
+}
+
+.header-right .bi-person {
+    font-size: 23px;
+}
+
+.header-right .search-button {
+    border: none;
+    background-color: transparent;
+}
+
+.header-right i {
+    font-size: 18px;
+    display: flex;
+
+}
+
+.header-right .header-cart {
+    position: relative;
+}
+
+.header-right .header-cart-link .header-cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    background-color: #1367ef;
+    border-radius: 100%;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+/* ? menu dropdown start ? */
+
+header .menu-dropdown-wrapper {
+    position: absolute;
+    top: 100%;
+    left: -30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease;
+}
+
+header .menu-dropdown-content {
+    width: 220px;
+    background-color: #fff;
+    border: 1px solid #dee0ea;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0;
+}
+
+header .menu-dropdown-content a {
+    display: flex;
+    padding: 4px 30px;
+    font-size: 14px;
+    transition: color .2s ease;
+}
+
+
+header .menu-dropdown-content a:hover {
+    color: #1367ef;
+}
+
+
+.header-center .menu-list .menu-list-item:hover .menu-dropdown-wrapper {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+/* ? menu dropdown end? */
+
+
+/* header end */
+
+
+/* ? Header Responsive */
+
+@media (max-width:768px) {
+    .header-center {
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: #fff;
+        border-right: 1px solid #dee0ea;
+        height: 100%;
+        z-index: 2;
+    }
+
+    .header-center .menu-list {
+        flex-direction: column;
+        padding: 40px 60px;
+
+    }
+
+    .header-mobile {
+        display: inline-block;
+    }
+
+    .header-center .bi-x-circle {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    header .menu-dropdown-wrapper {
+        display: none !important;
+    }
+
+    header .menu-list i {
+        display: none;
+    }
+
+
+    header .menu-list-item a {
+        font-size: 16px !important;
+    }
+}
+
+/* header responsive // */

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet | MAJJE</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+ <!--! Header Start -->
+ <header>
+    <div class="header-row">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-mobile">
+                    <i class="bi bi-list" id="btn-menu"></i>
+                </div>
+                <div class="header-left">
+                    <a href="index.html" class="logo">LOGO</a>
+                </div>
+                <div class="header-center" id="sidebar">
+                    <nav class="navigation">
+                        <ul class="menu-list">
+                            <li class="menu-list-item">
+                                <a href="index.html" class="menu-link ">Anasayfa <i
+                                        class="bi bi-chevron-down"></i></a>
+                                <div class="menu-dropdown-wrapper">
+                                    <ul class="menu-dropdown-content">
+                                        <li><a href="">Home Clean</a></li>
+                                        <li><a href="">Home Koleksiyon</a></li>
+                                        <li><a href="">Home Minimal</a></li>
+                                        <li><a href="">Home Modern</a></li>
+                                        <li><a href="">Home Parallax</a></li>
+                                        <li><a href="">Home Strong</a></li>
+                                        <li><a href="">Home Style</a></li>
+                                        <li><a href="">Home Unique</a></li>
+                                        <li><a href="">Home RTL</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-list-item  "><a href="shop.html" class="menu-link  ">Ürünler </a>
+                            </li>
+                            </li>
+                            <li class="menu-list-item"><a href="contact.html" class="menu-link ">İletişim</a><i></i>
+                            </li>
+                        </ul>
+                    </nav>
+                    <i class="bi-x-circle" id="close-sidebar"></i>
+                </div>
+                <div class="header-right">
+                    <div class="header-right-links">
+                        <a class="header-account-link" href="account.html">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <button class="search-button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <a href="#" class="header-heart-link">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                        <div class="header-cart">
+                            <a href="cart.html" class="header-cart-link">
+                                <i class="bi bi-bag"></i>
+                                <span class="header-cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--! Header end -->
+
+<!-- ! Modal Search start ! -->
+<div class="modal-search">
+    <div class="modal-wrapper">
+        <h3 class="modal-title">Ürün ara</h3>
+        <p class="modal-text">Aradığınız ürünleri görmek için yazmaya başlayın.</p>
+        <form action="" class="search-form">
+            <input type="text" placeholder="Bir ürün ara...">
+            <button>
+                <i class="bi bi-search"></i>
+            </button>
+        </form>
+        <div class="search-results">
+            <div class="search-heading">
+                <h3>ARAMA SONUÇLARI</h3>
+            </div>
+            <div class="results">
+
+            </div>
+        </div>
+        <i class="bi bi-x-circle" id="close-search"></i>
+    </div>
+
+</div>
+<!-- ! Modal Search End! -->
+
+    <!-- !! Cart Start -->
+
+    <section class="cart-page">
+        <div class="container">
+            <div class="cart-page-wrapper">
+                <form class="cart-form">
+                    <div class="free-progress-bar">
+                        <p class="progress-bar-title">
+                            Sepetinize <strong>700₺</strong> tutarında ürün eklediğinizde kargo ücretsiz.
+                        </p>
+                        <div class="progress-bar">
+                            <span class="progress"></span>
+                        </div>
+                    </div>
+                    <div class="shop-table-wrapper">
+                        <table class="shop-table">
+                            <thead>
+                                <th class="product-thumbnail">&nbsp;</th>
+                                <th class="product-thumbnail">&nbsp;</th>
+                                <th class="product-name">Ürün</th>
+                                <th class="product-price">Fiyat</th>
+                                <th class="product-quantity">Adet</th>
+                                <th class="product-subtotal">Ürün Tutar</th>
+                            </thead>
+                            <tbody class="cart-wrapper">
+
+                            </tbody>
+                        </table>
+                        <div class="actions-wrapper">
+                            <div class="coupon">
+                                <input type="text" class="input-text" placeholder="Kupon Kodu">
+                                <button class="btn btn-apply">Kuponu Uygula</button>
+                            </div>
+                            <div class="update-cart">
+                                <button class="btn btn-update">Sepeti Güncelle</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="cart-total">
+                    <div class="cart-totals">
+                        <h2>Sepet </h2>
+                        <table>
+                            <tbody>
+                                <tr class="cart-subtotal">
+                                    <th>Sepet tutarı</th>
+                                    <td>
+                                        <span id="subtotal">316TL</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Kargo</th>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                <span>"Adres Bilgileri"</span>
+                                            </li>
+                                            <li>
+                                                <a class="change-adress" href="#">Adresi Değiştir</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Total</th>
+                                    <td><strong id="cart-total"></strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="checkout">
+                            <button class="btn btn-lg">
+                                Sepeti onayla
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- !! Cart End -->
+
+
+    <!-- !! Policy Start -->
+    <section class="policy">
+        <div class="container">
+            <ul class="policy-list">
+                <li class="policy-item">
+                    <i class="bi bi-truck"></i>
+                    <div class="policy-text">
+                        <strong>
+                            Ücretsiz Teslimat
+                        </strong>
+                        <span>700 TL Üzeri siparişinizde</span>
+                    </div>
+                </li>
+                <li class="policy-item">
+                    <i class="bi bi-headset"></i>
+                    <div class="policy-text">
+                        <strong>
+                            24/7 DESTEK
+                        </strong>
+                        <span>24 Saat Online Destek</span>
+                    </div>
+                </li>
+                <li class="policy-item">
+                    <i class="bi bi-arrow-clockwise"></i>
+                    <div class="policy-text">
+                        <strong>
+                            3 GÜN İÇERİSİNDE
+                        </strong>
+                        <span>3 Gün İçerisinde Değişim</span>
+                    </div>
+                </li>
+                <li class="policy-item">
+                    <i class="bi bi-credit-card"></i>
+                    <div class="policy-text">
+                        <strong>
+                            ONLİNE ÖDEME SEÇENEKLERİ
+                        </strong>
+                        <span>Güvenli Online Ödeme</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- !! Policy End -->
+
+    <!-- !! Footer Start  -->
+
+    <footer class="footer">
+        <div class="widgets-row">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="brand-info">
+                        <div class="footer-logo">
+                            <a href="" class="logo">E-COMMERCE</a>
+                        </div>
+                        <div class="footer-desc">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odit vitae suscipit eveniet
+                                tempora non, aliquid recusandae dolorum sint voluptatibus sequi nobis, est, modi ipsam.
+                                In
+                                deserunt tempora laborum temporibus.</p>
+                        </div>
+                        <div class="footer-contact">
+                            <p>
+                                <a href="tel:532 285 21 68">5322852168</a>
+                                <a href="mailto:sametarda@gmail.com">sametarda@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="widget-nav-menu">
+                        <h4>KURUMSAL</h4>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="index.html">Anasayfa</a>
+                            </li>
+                            <li>
+                                <a href="">Hakkımızda</a>
+                            </li>
+                            <li>
+                                <a href="">KVKK</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Bize Ulaşın</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget-nav-menu">
+                        <h4>YARDIM</h4>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="account.html">Hesap Ayarları</a>
+                            </li>
+                            <li>
+                                <a href="">Sipariş Durumu</a>
+                            </li>
+                            <li>
+                                <a href="">Teslimat ve İade</a>
+                            </li>
+                            <li>
+                                <a href="">Kolay İade</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget-nav-menu">
+                        <h4>KATEGORİLER</h4>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="">Kadın</a>
+                            </li>
+                            <li>
+                                <a href="">Erkek</a>
+                            </li>
+                            <li>
+                                <a href="">Ceket</a>
+                            </li>
+                            <li>
+                                <a href="">Pantolon</a>
+                            </li>
+                            <li>
+                                <a href="">Mont</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-row">
+            <div class="container">
+                <div class="footer-copyright">
+                    <div class="site-copyright">
+                        <p>Copyright© 2023 <strong>"Company" </strong>Tüm hakları saklıdır. Powered by <a
+                                href="https://instagram.com/ssamet.arda">ARDA AKGÜN</a></p>
+                        <!-- <p class="poweredBy"></p> -->
+                    </div>
+                    <a href="#">
+                        <img src="img/footer/cards.png" alt="">
+                    </a>
+                    <div class="footer-menu">
+                        <ul class="footer-menu-list">
+                            <li class="list-item">
+                                <a href="">Gizlilik Politikası</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="">Şartlar ve Koşullar</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="">İade Politikası</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- !! Footer End -->
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/cart.js" type="module"></script>
+
+</body>
+
+</html>
