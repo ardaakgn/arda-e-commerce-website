@@ -4,7 +4,7 @@
 
 .slider-item {
     position: relative;
-    height: calc(100vh - 137px);
+    height: calc(100vh);
 }
 
 .slider-item .slider-image img {
